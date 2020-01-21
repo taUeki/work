@@ -9,22 +9,19 @@
 </head>
 
 <body>
-  <!-- header -->
   <header class="header">
     <h2>TechForward</h2>
   </header>
   
-  <!-- sidebar -->
   <div class="sidebar">
     <a href="#home">ホーム</a>
     <a href="#news">テスト</a>
-    <a href="#contact">スコア</a>
-    <a href="#home">ご利用ガイド</a>
-    <a href="#news">よくある質問</a>
+    <a href="#score">スコア</a>
+    <a href="#guide">ご利用ガイド</a>
+    <a href="#question">よくある質問</a>
     <a href="#contact">お問い合わせ</a>
   </div>
   
-  <!-- content -->
   <div class="content">
     <div class="bread">
       <ul>
@@ -32,59 +29,90 @@
         <li><a href="#">受験者一覧</a></li>
       </ul>
     </div>
+  
     <h2>受験者一覧</h2>
     
-    <section id="form" class="section vision">
+    <section id="form" class="section search">
       <h2>検索条件</h2>
-      
       <form>
-        <div class="item">
-          <div class="column">
-            <p>受験者名(姓)</p><input type="text" name="lastname" />
+        <div class="grid">
+          <div class="form__group grid__col">
+            <label>受験者名(姓)</label>
+            <div class="form__controls">
+              <input class="form__input" type="text" name="aaa">
+            </div>
           </div>
           
-          <div class="column">
-            <p>受験者名(名)</p><input type="text" name="firstname" />
+          <div class="form__group grid__col">
+            <label>受験者名(名)</label>
+            <div class="form__controls">
+              <input class="form__input" type="text" name="bbb">
+            </div>
           </div>
           
-          <div class="column">
-            <p>管理用タイトル(募集名)</p><input type="text" name="admin_title" />
+          <div class="form__group grid__col">
+            <label>管理用タイトル(募集名)</label>
+            <div class="form__controls">
+              <input class="form__input" type="text" name="ccc">
+            </div>
           </div>
           
-          <div class="column">
-            <p>メールアドレス</p><input type="email" name="mail" />
+          <div class="form__group grid__col">
+            <label>メールアドレス</label>
+            <div class="form__controls">
+              <input class="form__input" type="text" name="ddd">
+            </div>
           </div>
           
-          <div class="column">
-            <p>会員登録状態</p><input type="text" name="registration_status" />
+          <div class="form__group grid__col">
+            <label>会員登録状態</label>
+            <div class="form__controls">
+              <input class="form__input" type="text" name="eee">
+            </div>
           </div>
           
-          <div class="column">
-            <p>応募状態</p><input type="text" name="application_status" />
+          <div class="form__group grid__col">
+            <label>応募状態</label>
+            <div class="form__controls">
+              <input class="form__input" type="text" name="fff">
+            </div>
           </div>
           
-          <div class="column">
-            <p>応募日時(>=)</p><input type="text" name="deadline" />
+          <div class="form__group grid__col">
+            <label>応募日時(>=)</label>
+            <div class="form__controls">
+              <input class="form__input" type="text" name="ggg">
+            </div>
           </div>
           
-          <div class="column">
-            <p>応募日時(<=)</p><input type="text" name="deadline" />
+          <div class="form__group grid__col">
+            <label>応募日時(<=)</label>
+            <div class="form__controls">
+              <input class="form__input" type="text" name="hhh">
+            </div>
           </div>
           
-          <div class="column">
-            <p>受験対象種別</p><input type="text" name="type" />
+          <div class="form__group grid__col">
+            <label>受験対象種別</label>
+            <div class="form__controls">
+              <input class="form__input" type="text" name="iii">
+            </div>
           </div>
           
-          <div class="column">
-            <p>メールアドレス</p><input type="email" name="mail" />
-          </div>
-        
+          <div class="form__group grid__col">
+            <label>メールアドレス</label>
+            <div class="form__controls">
+              <input class="form__input" type="text" name="jjj">
+            </div>
+          </div> 
         </div>
         <p class="reset"><input type="reset" value="条件クリア"></p>
         <p class="submit"><input type="submit" value="検索する" /></p>
       </form>
     </section>
 
+    <div class="download_btn">候補者情報ダウンロード</div>
+    
     <section id="result" class="section result">
       <table>
         <thead>
@@ -130,13 +158,12 @@
 
     </section>
   </div>
-
-  <!-- footer -->
-  <!-- <footer class="footer">
+  
+  <footer class="footer">
     <div class="content_inner">
-      <p class="copyright">TechForward</p>
+      <p>TakafumiUeki</p>
     </div>
-  </footer> -->
+  </footer>
 
 </body>
 </html>

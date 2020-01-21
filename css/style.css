@@ -17,24 +17,25 @@ body {
   box-sizing: border-box;
 }
 
+ul { list-style: none; }
+
+a { text-decoration: none; }
+
 .header {
   height: auto;
   padding: 8px 12px;
   border-bottom: 1px solid #E6E8EA
 }
 
-/* The side navigation menu */
 .sidebar {
   margin: 0;
   padding: 0;
   width: 200px;
   position: fixed;
-  height: 100%;
   overflow: auto;
-  border-right: 1px solid #E6E8EA
+  border-right: 1px solid #E6E8EA;
 }
 
-/* Sidebar links */
 .sidebar a {
   display: block;
   color: black;
@@ -42,25 +43,14 @@ body {
   text-decoration: none;
 }
 
-/* Links on mouse-over */
 .sidebar a:hover:not(.active) {
   background-color: #555;
   color: white;
 }
 
-/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
-div.content {
+.content {
   margin-left: 200px;
   padding: 1px 16px;
-  height: 1000px;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
 }
 
 a:hover {
@@ -71,21 +61,15 @@ a:hover {
   transition: all .3s;
 }
 
-.bread ul {
-  display: flex;
-  list-style-type: none;
-}
+.bread {padding: 10px 0px;}
+.bread ul { display: flex; }
 
 .bread li a {
   padding: 5px;
   color: #000000;
-  font-size: 16px;
-  text-decoration: none;
 }
 
-.bread li a:hover {
-  background-color: #EEEEEE;
-}
+.bread li a:hover { background-color: #EEEEEE; }
 
 .bread li:after {
   content: '\003e';
@@ -94,46 +78,22 @@ a:hover {
   color: #888888;
 }
 
-.bread li:last-child:after {
-  content: "";
-}
-
+.bread li:last-child:after { content: ""; }
 
 .clearfix::before {
   display: block;
   content: "";
-  clear: both;
 }
 
 .section {
   padding: 10px 0;
 }
 
-.content_inner {
-  margin: 0 auto;
-  padding: 0 24px;
-}
-
-.vision {
-  background-color: #F5F4F1;
-  text-align: center;
-}
-
-.item {
-  display: flex;
-  flex-wrap: wrap;
-}
-.column {
-  width: 49%;
-  margin-bottom: 10px;
-}
+.search { background-color: #F5F4F1; }
 
 input{
-  width: 80%;
-  padding: 4px;
-  font-size: 14px;
+  padding: 8px;
 }
-    
 
 .reset input, .submit input{
   width: 30%;
@@ -146,7 +106,6 @@ input{
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
-  
 }
 
 .submit input{
@@ -154,112 +113,45 @@ input{
   background-color: #555;
 }
 
-.company_table {
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 10px;
+  text-align: left;
+}
+
+.btn { padding: 10px; }
+
+.form{ padding:.5rem; }
+.form__group{ padding:1rem; }
+
+.form__controls{ margin-top:.5rem; }
+
+.form__input{ width:100%; }
+
+.form__submit{
+  text-decoration: none;
+  border-radius: 10px;
+}
+.grid{
   display: flex;
   flex-wrap: wrap;
-  width: 640px;
-  margin: 48px auto 0;
+  justify-content: center;
 }
 
-.company_list {
-  display: flex;
-  align-items: flex-start;
-  width: 100%;
-  height: auto;
-  padding: 28px 20px 20px;
-  border-bottom: 1px solid #D5D4CB;
-}
+.grid__col{ width: 50% }
 
-.company_term {
-  width: 160px;
-  margin: 0 32px 0 0;
-  font-size: 14px;
-  font-weight: 700;
-}
-
-.company_content {
-  width: calc(100% - 192px);
-  font-size: 14px;
-}
-
-.company_content_link {
-  color: #3479B7;
-}
-
-.footer {
+.download_btn{
+  width: 50%;
+  color: #f79010 !important;
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  background: #FFF;
+  border: solid 1px #f79010;
+  border-radius: 4px;
   text-align: center;
-}
-
-.footer .content_inner {
-  position: relative;
-  padding: 40px 0 20px;
-}
-
-.copyright {
-  margin: 56px 0 0;
-  font-size: 14px;
-  letter-spacing: 0.8px;
-  color: #848480;
-}
-
-@media screen and (max-width: 768px) {
-
-  .sidebar {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  .sidebar a {
-    float: left;
-    width: 50%;
-    text-align: center;
-    border: 1px solid #E6E8EA
-  }
-  div.content {margin-left: 0;}
-  
-  .section {
-    padding: 64px 0;
-  }
-
-  .content_inner {
-    width: 100%;
-  }
-
-  .header .content_inner {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 0;
-  }
-  
-  .column {
-    width: 100%;
-  }
-  .company_table {
-    width: 100%;
-    margin: 16px 0 0;
-  }
-
-  .company_term {
-    width: 80px;
-    margin: 0 24px 0 0;
-    font-size: 12px;
-  }
-
-  .company_content {
-    width: calc(100% - 104px);
-    font-size: 12px;
-  }
-
-  .footer .content_inner {
-    padding: 24px 0 12px;
-  }
-
-  .copyright {
-    margin: 12px 0 0;
-    font-size: 10px;
-  }
-
+  font-family: HiraginoSans-W6;
 }
 
 table{
@@ -285,10 +177,47 @@ table th{
 	font-size:14px;
 	letter-spacing:1px;
 }
+.footer {
+  text-align: center;
+  background-color:#fffbee;
+}
 
+.footer .content_inner {
+  position: relative;
+  padding: 40px 0 20px;
+}
 @media screen and (max-width: 768px) {
 
-	table{
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    clear:both;
+  }
+  .sidebar a {
+    float: left;
+    width: 50%;
+    text-align: center;
+    border: 1px solid #E6E8EA
+  }
+  div.content {margin-left: 0;}
+  
+  .content_inner {
+    width: 100%;
+  }
+
+  .header .content_inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  
+  .grid__col{ width: 100% }
+  
+  .download_btn{ width: 100%;}
+  
+  table{
 		border:0;
 	}
 
@@ -319,4 +248,5 @@ table th{
     font-size: 10px;
 		font-weight: bold;
 	}
+  
 }
