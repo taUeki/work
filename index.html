@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>TechForward</title>
+  <title>TechForward課題</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -13,154 +13,163 @@
     <h2>TechForward</h2>
   </header>
   
-  <div class="sidebar">
-    <a href="#home">ホーム</a>
-    <a href="#news">テスト</a>
-    <a href="#score">スコア</a>
-    <a href="#guide">ご利用ガイド</a>
-    <a href="#question">よくある質問</a>
-    <a href="#contact">お問い合わせ</a>
-  </div>
-  
-  <div class="content">
-    <div class="bread">
-      <ul>
-        <li><a href="#">ホーム</a></li>
-        <li><a href="#">受験者一覧</a></li>
-      </ul>
+  <div class="contents">
+
+    <div class="sidebar">
+      <a href="#home">ホーム</a>
+      <a href="#news">テスト</a>
+      <a href="#score">スコア</a>
+      <a href="#guide">ご利用ガイド</a>
+      <a href="#question">よくある質問</a>
+      <a href="#contact">お問い合わせ</a>
     </div>
-  
-    <h2>受験者一覧</h2>
     
-    <section id="form" class="section search">
-      <h2>検索条件</h2>
-      <form>
-        <div class="grid">
-          <div class="form__group grid__col">
-            <label>受験者名(姓)</label>
-            <div class="form__controls">
-              <input class="form__input" type="text" name="aaa">
-            </div>
-          </div>
-          
-          <div class="form__group grid__col">
-            <label>受験者名(名)</label>
-            <div class="form__controls">
-              <input class="form__input" type="text" name="bbb">
-            </div>
-          </div>
-          
-          <div class="form__group grid__col">
-            <label>管理用タイトル(募集名)</label>
-            <div class="form__controls">
-              <input class="form__input" type="text" name="ccc">
-            </div>
-          </div>
-          
-          <div class="form__group grid__col">
-            <label>メールアドレス</label>
-            <div class="form__controls">
-              <input class="form__input" type="text" name="ddd">
-            </div>
-          </div>
-          
-          <div class="form__group grid__col">
-            <label>会員登録状態</label>
-            <div class="form__controls">
-              <input class="form__input" type="text" name="eee">
-            </div>
-          </div>
-          
-          <div class="form__group grid__col">
-            <label>応募状態</label>
-            <div class="form__controls">
-              <input class="form__input" type="text" name="fff">
-            </div>
-          </div>
-          
-          <div class="form__group grid__col">
-            <label>応募日時(>=)</label>
-            <div class="form__controls">
-              <input class="form__input" type="text" name="ggg">
-            </div>
-          </div>
-          
-          <div class="form__group grid__col">
-            <label>応募日時(<=)</label>
-            <div class="form__controls">
-              <input class="form__input" type="text" name="hhh">
-            </div>
-          </div>
-          
-          <div class="form__group grid__col">
-            <label>受験対象種別</label>
-            <div class="form__controls">
-              <input class="form__input" type="text" name="iii">
-            </div>
-          </div>
-          
-          <div class="form__group grid__col">
-            <label>メールアドレス</label>
-            <div class="form__controls">
-              <input class="form__input" type="text" name="jjj">
-            </div>
-          </div> 
-        </div>
-        <p class="reset"><input type="reset" value="条件クリア"></p>
-        <p class="submit"><input type="submit" value="検索する" /></p>
-      </form>
-    </section>
-
-    <div class="download_btn">候補者情報ダウンロード</div>
+    <div class="main">
+      <div class="bread">
+        <ul>
+          <li><a href="#">ホーム</a></li>
+          <li><a href="#">受験者一覧</a></li>
+        </ul>
+      </div>
     
-    <section id="result" class="section result">
-      <table>
-        <thead>
-          <tr>
-            <th scope="col">氏名/所属/メールアドレス</th>
-            <th scope="col">募集タイトル/募集期間</th>
-            <th scope="col">受験対象</th>
-            <th scope="col">相性スコア</th>
-            <th scope="col">応募状況</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td scope="row" data-label="氏名/所属/メールアドレス">受験太郎<br>t.k.xxskt@gmail.com@.com</td>
-            <td data-label="募集タイトル/募集期間">自主検査<br>2018/01/01~2020/01/01</td>
-            <td data-label="受験対象">&nbsp;</td>
-            <td data-label="相性スコア">A</td>
-            <td data-label="応募状況">未応募</td>
-          </tr>
-          <tr>
-            <td scope="row" data-label="氏名/所属/メールアドレス">受験太郎<br>t.k.xxskt@gmail.com@.com</td>
-            <td data-label="募集タイトル/募集期間">自主検査<br>2018/01/01~2020/01/01</td>
-            <td data-label="受験対象">&nbsp;</td>
-            <td data-label="相性スコア">A</td>
-            <td data-label="応募状況">未応募</td>
-          </tr>
-          <tr>
-            <td scope="row" data-label="氏名/所属/メールアドレス">受験太郎<br>t.k.xxskt@gmail.com@.com</td>
-            <td data-label="募集タイトル/募集期間">自主検査<br>2018/01/01~2020/01/01</td>
-            <td data-label="受験対象">&nbsp;</td>
-            <td data-label="相性スコア">A</td>
-            <td data-label="応募状況">未応募</td>
-          </tr>
-          <tr>
-            <td scope="row" data-label="氏名/所属/メールアドレス">受験太郎<br>t.k.xxskt@gmail.com@.com</td>
-            <td data-label="募集タイトル/募集期間">自主検査<br>2018/01/01~2020/01/01</td>
-            <td data-label="受験対象">&nbsp;</td>
-            <td data-label="相性スコア">A</td>
-            <td data-label="応募状況">未応募</td>
-          </tr>
-        </tbody> 
-      </table>
+      <h2>受験者一覧</h2>
+      
+      <section id="form" class="section search">
+        <h2>検索条件</h2>
+        <form>
+          <div class="grid">
+            <div class="form__group grid__col">
+              <label>受験者名(姓)</label>
+              <div class="form__controls">
+                <input class="form__input" type="text" name="aaa">
+              </div>
+            </div>
+            
+            <div class="form__group grid__col">
+              <label>受験者名(名)</label>
+              <div class="form__controls">
+                <input class="form__input" type="text" name="bbb">
+              </div>
+            </div>
+            
+            <div class="form__group grid__col">
+              <label>管理用タイトル(募集名)</label>
+              <div class="form__controls">
+                <input class="form__input" type="text" name="ccc">
+              </div>
+            </div>
+            
+            <div class="form__group grid__col">
+              <label>メールアドレス</label>
+              <div class="form__controls">
+                <input class="form__input" type="text" name="ddd">
+              </div>
+            </div>
+            
+            <div class="form__group grid__col">
+              <label>会員登録状態</label>
+              <div class="form__controls">
+                <input class="form__input" type="text" name="eee">
+              </div>
+            </div>
+            
+            <div class="form__group grid__col">
+              <label>応募状態</label>
+              <div class="form__controls">
+                <input class="form__input" type="text" name="fff">
+              </div>
+            </div>
+            
+            <div class="form__group grid__col">
+              <label>応募日時(>=)</label>
+              <div class="form__controls">
+                <input class="form__input" type="text" name="ggg">
+              </div>
+            </div>
+            
+            <div class="form__group grid__col">
+              <label>応募日時(<=)</label>
+              <div class="form__controls">
+                <input class="form__input" type="text" name="hhh">
+              </div>
+            </div>
+            
+            <div class="form__group grid__col">
+              <label>受験対象種別</label>
+              <div class="form__controls">
+                <input class="form__input" type="text" name="iii">
+              </div>
+            </div>
+            
+            <div class="form__group grid__col">
+              <label>メールアドレス</label>
+              <div class="form__controls">
+                <input class="form__input" type="text" name="jjj">
+              </div>
+            </div> 
+          </div>
+          
+          <div class="form_btn-box">
+            <div class="form_btn-item">
+              <input class="reset__input" type="reset" value="条件クリア" />
+            </div>
+            <div class="form_btn-item">
+              <input class="submit__input" type="submit" value="検索する" />
+            </div>
+          </div>
+          
+        </form>
+      </section>
 
-    </section>
+      <div class="download_btn">候補者情報ダウンロード</div>
+      
+      <section id="result" class="section result">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">氏名/所属/メールアドレス</th>
+              <th scope="col">募集タイトル/募集期間</th>
+              <th scope="col">受験対象</th>
+              <th scope="col">相性スコア</th>
+              <th scope="col">応募状況</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row" data-label="氏名/所属/メールアドレス">受験太郎<br>t.k.xxskt@gmail.com@.com</td>
+              <td data-label="募集タイトル/募集期間">自主検査<br>2018/01/01~2020/01/01</td>
+              <td data-label="受験対象">&nbsp;</td>
+              <td data-label="相性スコア">A</td>
+              <td data-label="応募状況">未応募</td>
+            </tr>
+            <tr>
+              <td scope="row" data-label="氏名/所属/メールアドレス">受験太郎<br>t.k.xxskt@gmail.com@.com</td>
+              <td data-label="募集タイトル/募集期間">自主検査<br>2018/01/01~2020/01/01</td>
+              <td data-label="受験対象">&nbsp;</td>
+              <td data-label="相性スコア">A</td>
+              <td data-label="応募状況">未応募</td>
+            </tr>
+            <tr>
+              <td scope="row" data-label="氏名/所属/メールアドレス">受験太郎<br>t.k.xxskt@gmail.com@.com</td>
+              <td data-label="募集タイトル/募集期間">自主検査<br>2018/01/01~2020/01/01</td>
+              <td data-label="受験対象">&nbsp;</td>
+              <td data-label="相性スコア">A</td>
+              <td data-label="応募状況">未応募</td>
+            </tr>
+            <tr>
+              <td scope="row" data-label="氏名/所属/メールアドレス">受験太郎<br>t.k.xxskt@gmail.com@.com</td>
+              <td data-label="募集タイトル/募集期間">自主検査<br>2018/01/01~2020/01/01</td>
+              <td data-label="受験対象">&nbsp;</td>
+              <td data-label="相性スコア">A</td>
+              <td data-label="応募状況">未応募</td>
+            </tr>
+          </tbody> 
+        </table>
+      </section>
+    </div>
   </div>
-  
   <footer class="footer">
-    <div class="content_inner">
+    <div class="footer_inner">
       <p>TakafumiUeki</p>
     </div>
   </footer>
