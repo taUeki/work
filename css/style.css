@@ -33,7 +33,6 @@ a { text-decoration: none; }
   margin: 0;
   padding: 0;
   width: 200px;
-  /* position: fixed; */
   overflow: auto;
   border-right: 1px solid #E6E8EA;
 }
@@ -119,7 +118,9 @@ a:hover {
   height: 40px;
   border-radius: 10px;
 } 
+
 .reset__input{ background-color:  #ffffff; }
+
 .submit__input{ 
   color: #ffffff;
   background-color: #555;
@@ -209,9 +210,7 @@ table th{
   
   .grid__col{ width: 100% }
   
-  .form_btn-item{
-    width: 100%;
-  }
+  .form_btn-item{ width: 100%; }
   
   .download_btn{ width: 100%;}
   
@@ -242,5 +241,4 @@ table th{
   }
   
   .footer_inner { width: 100%; }
-  
 }
