@@ -27,7 +27,7 @@ a { text-decoration: none; }
   border-bottom: 1px solid #E6E8EA
 }
 
-.contents{ overflow: hidden; }
+.contents { overflow: hidden; }
 
 .sidebar {
   margin: 0;
@@ -97,23 +97,23 @@ a:hover {
   justify-content: center;
 }
 
-.form__group{ padding:1rem; }
+.form__group { padding:1rem; }
 
-.grid__col{ width: 50% }
+.grid__col { width: 50% }
 
-.form__controls{ margin-top:.5rem; }
+.form__controls { margin-top:.5rem; }
 
-.form__input{ 
+.form__input { 
   width:100%;
   padding: 8px; 
 }
 
-.form_btn-item{
+.form_btn-item {
   width: 30%;
   padding: 10px 20px;
 }
 
-.reset__input, .submit__input{
+.reset__input, .submit__input {
   width: 100%;
   height: 40px;
   border-radius: 10px;
@@ -121,12 +121,12 @@ a:hover {
 
 .reset__input{ background-color:  #ffffff; }
 
-.submit__input{ 
+.submit__input { 
   color: #ffffff;
   background-color: #555;
 }
 
-.download_btn{
+.download_btn {
   width: 50%;
   background-color: #555;
   color: white;
@@ -145,7 +145,7 @@ a:hover {
   text-align: left;
 }
 
-table{
+table {
 	width:100%;
 	border-collapse:collapse;
 	border-spacing:0;
@@ -154,17 +154,17 @@ table{
 	margin:0;
 }
 
-table tr{
+table tr {
 	border:1px solid #ddd;
 	padding:5px;
 }
 
-table th, table td{
+table th, table td {
 	padding:10px;
 	text-align:center;
 }
 
-table th{
+table th {
 	font-size:14px;
 	letter-spacing:1px;
 }
@@ -177,14 +177,14 @@ table th{
 .footer_inner { padding: 40px 0 20px; }
 
 /* PC */
-@media (min-width: 769px){
-  .sidebar{
+@media (min-width: 769px) {
+  .sidebar {
     float: left;
     padding-bottom: 10000px;
     margin-bottom: -10000px;
   }
   
-  .form_btn-box{
+  .form_btn-box {
     display: flex;
     justify-content: center;
   }
@@ -208,30 +208,30 @@ table th{
   
   .main {margin-left: 0;}
   
-  .grid__col{ width: 100% }
+  .grid__col { width: 100% }
   
-  .form_btn-item{ width: 100%; }
+  .form_btn-item { width: 100%; }
   
-  .download_btn{ width: 100%;}
+  .download_btn { width: 100%;}
   
-  table{ border:0; }
+  table { border:0; }
 
-	table thead{ display:none; }
+	table thead { display:none; }
 
-	table tr{
+	table tr {
 		margin-bottom:10px;
 		display:block;
 		border-bottom:2px solid #ddd;
 	}
 
-	table td{
+	table td {
 		display:block;
 		text-align:right;
 		font-size:10px;
 		border-bottom:1px dotted #ccc;
 	}
 
-	table td:last-child{ border-bottom:0; }
+	table td:last-child { border-bottom:0; }
 
 	table td:before {
 		content:attr(data-label);
